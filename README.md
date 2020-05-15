@@ -1,2 +1,2 @@
-# Michael_Davis_Portfolio
+# Michael Davis Portfolio
 Professional portfolio for Michael Davis
