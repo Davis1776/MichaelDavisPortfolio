@@ -2,4 +2,4 @@
 
 [Please visit my professional portfolio](https://davis1776.github.io/MichaelDavisPortfolio/)
 
-[Portfolio](images\home\PortfolioScreenShot.png)
+# <p align="center"> ![Portfolio](images/home/PortfolioScreenShot.png) </p>
