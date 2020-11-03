@@ -1,0 +1,179 @@
+<!DOCTYPE HTML>
+<!--
+	Alpha by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-156016776-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'UA-156016776-1');
+	</script>
+
+	<title>Belly Button Biodiversity Study</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="shortcut icon" type="image/png" href="images\flavicon\changa32x32royalblue-peach.png" />
+</head>
+
+<body class="is-preload">
+	<div id="page-wrapper">
+
+		<!-- Header -->
+		<header id="header">
+			<h1><a href="index.html">Portfolio Website</a> by Michael Davis</h1>
+			<nav id="nav">
+				<ul>
+					<li><a href="index.html" class="button">Home</a></li>
+					<li>
+						<a href="#" class="icon solid fa-angle-down">Additional Information</a>
+						<ul>
+							<li><a href="aboutme.html">About Me</a></li>
+							<li><a href="resume.html">Resume</a></li>
+							<li><a href="contact.html">Contact</a></li>
+							<li>
+								<a href="#">Projects</a>
+								<ul>
+                                    <li><a href="honeybeeviz.html">Honey Bee Tableau Viz</a></li>
+                                    <li><a href="earthquake.html">Earthquake Data Viz</a></li>
+									<li><a href="belly_button.html">Biodiversity Dashboard</a></li>
+                                    <li><a href="weather.html">Weather Impact Study</a></li>
+								</ul>
+							</li>
+					</li>
+				</ul>
+				</li>
+				<!-- <li><a href="#" class="button">Sign Up</a></li> -->
+				</ul>
+			</nav>
+		</header>
+
+		<!-- Main -->
+		<section id="main" class="container">
+			<header>
+				<h2>Interactive Web Data Visualization</h2>
+				<p>A data visualization that explores the microbes that colonize human navels.
+					<br />In other words, your belly button.</p>
+			</header>
+			<div class="box">
+				<span class="image featured"><img src="images/bellybutton/bacteriacells3.jpg" alt="an image" /></span>
+				<hr class="divider">
+
+				<div class="row-6 row-12-mobilep">
+					<hr class="divider">
+					<h3>Set up</h3>
+					<p> In this project, I built an interactive dashboard to explore the Belly Button
+						Biodiversity dataset, which catalogs the microbes that colonize human navels.
+						<br><br>
+						The dataset reveals that only a small handful of microbial species (also called
+						operational taxonomic units, or OTUs, in the study) were present in more than
+						70% of people, while the rest were relatively rare.
+					<p>
+
+					<div class="row-6 row-12-mobilep">
+						<hr class="divider">
+						<h3>1) Plot.ly</h3>
+						<ol>
+							<li style="margin-left:2em">Use the D3 library to read in samples.json.</li>
+							<li style="margin-left:2em">Create a horizontal bar chart with a dropdown
+								menu to display the top 10 OTUs found in that individual.</li>
+							<ul>
+								<li style="margin-left:2em">Use sample_values as the values for the bar chart.</li>
+								<li style="margin-left:2em">Use otu_ids as the labels for the bar chart.</li>
+								<li style="margin-left:2em">Use otu_labels as the hovertext for the chart.</li>
+							</ul>
+
+							<span class="image featured_60"><img src="images/bellybutton/MRD_Bar_Chart.png"
+									alt="centered image" /></span>
+
+							<li style="margin-left:2em">Create a bubble chart that displays each sample.</li>
+							<ul>
+								<li style="margin-left:2em">Use otu_ids for the x values.</li>
+								<li style="margin-left:2em">Use sample_values for the y values.</li>
+								<li style="margin-left:2em">Use sample_values for the marker size.</li>
+								<li style="margin-left:2em">Use otu_ids for the marker colors.</li>
+								<li style="margin-left:2em">Use otu_labels for the text values.</li>
+							</ul>
+
+							<span class="image featured_60"><img src="images/bellybutton/MRD_Bubble_Chart.png"
+									alt="centered image" /></span>
+
+							<li style="margin-left:2em">Display the sample metadata, i.e. an individual's demographic
+								information.</li>
+							<li style="margin-left:2em">Display each key-value pair from the metadata JSON object
+								somewhere on the page.</li>
+							<li style="margin-left:2em">Update all of the plots any time that a new sample is selected.
+							</li>
+							Additionally, I created a layout for my dashboard:
+
+							<span class="image featured_60"><img src="images/bellybutton/MRD_Dashboard.png"
+									alt="centered image" /></span>
+						</ol>
+						<p>
+
+						<div class="row-6 row-12-mobilep">
+							<hr class="divider">
+							<h3>2) Additional Plot</h3>
+							<p>
+							<ul>
+								<li style="margin-left:2em">I adapted the Gauge Chart from Plot.ly to plot the weekly
+									washing frequency of the individual.</li>
+								<li style="margin-left:2em">Next, I modifed the example gauge code to account for values
+									ranging from 0 through 9.</li>
+								<li style="margin-left:2em">the chart updates whenever a new sample is selected.</li>
+							</ul>
+
+							<span class="image featured_60"><img src="images/bellybutton/MRD_Gauge_Plot.png"
+									alt="centered image" /></span>
+
+							<p>
+
+							<div class="row-6 row-12-mobilep">
+								<hr class="divider">
+								<h3>3) Deployment</h3>
+								<p> I deployed my app to a free static page hosting service, GitHub Pages.
+								<p>
+
+							</div>
+						</div>
+		</section>
+
+		<!-- Footer -->
+		<footer id="footer">
+			<ul class="icons">
+				<li><a href="https://github.com/Davis1776" class="icon brands fa-github" rel="noopener noreferrer"
+						target="_blank"><span class="label">Github</span></a></li>
+				<li><a href="https://www.linkedin.com/in/mrdavis/" class="icon brands fa-linkedin"
+						rel="noopener noreferrer" target="_blank"><span class="label">LinkedIn</span></a></li>
+				<!-- <li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li> -->
+				<li><a href="mailto:Michael@Davis1776.com" class="icon solid fa-envelope"><span
+							class="label">Email</span></a></li>
+			</ul>
+			<ul class="copyright">
+				<li>&copy; 2020 Michael R. Davis.</li>
+				<li>All rights reserved</a></li>
+			</ul>
+		</footer>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.dropotron.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
