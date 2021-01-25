@@ -6,6 +6,7 @@ LocalFolderOnly/
 */.LocalFolderOnly/*
 
 # Backup folder containing previous versions of site
+backup/
 */.backup/*
 
 # API Keys
