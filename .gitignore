@@ -5,6 +5,9 @@
 LocalFolderOnly/
 */.LocalFolderOnly/*
 
+# Backup folder containing previous versions of site
+*/.backup/*
+
 # API Keys
 config.js
 config.py
